@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+
+    <style>
+        .gradient-custom {
+            background: #f6d365;
+            background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+            background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+        }
+
+        .card {
+            border-radius: .5rem;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-avatar img {
+            width: 100%; /* Ensure the image fills the circle */
+            max-width: 100px; /* Limit maximum size */
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom-lg {
+            padding: 8px 30px; /* Larger padding for longer text */
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        .card-body h6 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-body hr {
+            border-top: 1px solid #ccc;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .social-icons a {
+            color: #333;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="vh-100" style="background-color: #f4f5f7;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-8 mb-4 mb-lg-0">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 gradient-custom text-center text-white">
+                                <img src="../assets/img/default.jpg" alt="Avatar" class="img-fluid my-5 profile-avatar" />
+                                <h5>Marie Horwitz</h5>
+                                <p>Web Designer</p>
+                                <i class="far fa-edit mb-2"></i>
+                                <div class="d-flex justify-content-center flex-column align-items-center">
+                                    <button class="btn-custom mb-2">Home</button>
+                                    <button class="btn-custom btn-custom-lg">Download QR</button>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h6>Information</h6>
+                                    <hr class="mt-0 mb-4">
+                                    <div class="row pt-1">
+                                        <div class="col-6 mb-3">
+                                            <h6>Email</h6>
+                                            <p class="text-muted">info@example.com</p>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <h6>Phone</h6>
+                                            <p class="text-muted">123 456 789</p>
+                                        </div>
+                                    </div>
+                                    <h6>Projects</h6>
+                                    <hr class="mt-0 mb-4">
+                                    <div class="row pt-1">
+                                        <div class="col-6 mb-3">
+                                            <h6>Recent</h6>
+                                            <p class="text-muted">Lorem ipsum</p>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <h6>Most Viewed</h6>
+                                            <p class="text-muted">Dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <div class="social-icons mt-3">
+                                        <a href="#!"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                        <a href="#!"><i class="fab fa-twitter fa-lg"></i></a>
+                                        <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js">
+    </script>
+</body>
+
+</html>
